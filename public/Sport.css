@@ -1,0 +1,2467 @@
+/*link odCss
+
+/*link od font-family*/
+
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Hurricane&family=Inspiration&family=Source+Sans+Pro:wght@200;300;400&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Hurricane&family=Inspiration&family=Rubik+Moonrocks&family=Source+Sans+Pro:wght@200;300;400&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Hurricane&family=Inspiration&family=Rubik+Moonrocks&family=Rubik+Wet+Paint&family=Source+Sans+Pro:wght@200;300;400&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Hurricane&family=Indie+Flower&family=Inspiration&family=Rubik+Moonrocks&family=Rubik+Wet+Paint&family=Source+Sans+Pro:wght@200;300;400&display=swap');
+
+
+
+
+
+:root{
+
+    --pink: #e84393;
+
+    --pinkk : #ff0157;
+
+    --bg: #222;
+
+}
+
+
+
+*{
+
+    margin: 0;  /*margin: 10px;*/
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    /*font-family: 'Courier New', Courier, monospace;*/
+
+    outline: none; /*?*/
+
+    border: none;
+
+    text-decoration: none;  /*obican tekst-ono nije podvucen*/
+
+    text-transform:inherit;
+
+    /*text-transform: uppercase - velika sloca, linespace -mala sva slova, nherit -normalono, capitalize prvo veliku uvijek*/
+
+    /*transition: .2s linear; /*?*/
+
+
+
+}
+
+
+
+/*--------------------------------------Ovaj dio dole je za mobitel i komp i laptop => svade da isto izgleda------------------*/
+
+.responsive {
+
+    padding: 0 6px;
+
+    float: left;
+
+    width: 24.99999%;
+
+}
+
+
+
+@media only screen and (max-width: 700px) {
+
+    .responsive {
+
+        width: 49.99999%;
+
+        margin: 6px 0;
+
+    }
+
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .responsive {
+
+        width: 100%;
+
+    }
+
+}
+
+
+
+.clearfix:after {
+
+    content: "";
+
+    display: table;
+
+    clear: both;
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+html{ /*?*/
+
+    font-size: 62.5%;
+
+    scroll-behavior: smooth;
+
+    scroll-padding-top: 6rem;
+
+    overflow-x: hidden;
+
+}
+
+
+
+section{  /*kao stranice*/
+
+    padding: 100px;
+
+}
+
+
+
+/*----------------------------------------------------------------------naslovnica-------------------------------------------------*/
+
+.naslovnica{
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    /*background: url(img/Pozadine/1807765.jpg);*/
+
+}
+
+
+
+.naslovnica h1{
+
+    font-size: 1.5rem;
+
+    color: wheat;
+
+    text-align: center;
+
+    /* text-decoration: underline;  /*crta ispod teksta*/
+
+    text-transform: uppercase; /*velika slova*/
+
+    text-shadow: 1px 1px 2px black, 0 0 10px rgb(177, 207, 127), 0 0 5px darkblue;
+
+    /*sjena teksta-vise puta*/
+
+    font-family: 'Rubik Wet Paint', cursive;
+
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------zaglavlje----------------------------------------------------------*/
+
+header{
+
+    position: fixed;
+
+    top: 0;  /*uzgar udaljeno*/
+
+    left: 0;   /*ulijevo odmaknuto*/
+
+    right: 0;    /*udesno odmaknuto*/
+
+    width: 100%;
+
+    padding: 2rem 9%;  /*debljina zaglavlja*/
+
+    display: flex;
+
+    justify-content: space-between;   /*rasporedi shop - admin.. kako treba, da nema toga bilo bi sve jedno do dodrugoga*/
+
+    align-items: center;
+
+    transition: 0.5s;
+
+    background: #fff;
+
+    font-size: 1.25em;    /*velicina slova*/
+
+    z-index: 1000; /*999*/
+
+    box-shadow: 0 .5rem 1.5rem;  /*rgba(0,0,0,.1);    /*doda se okvir za zaglavlje*/
+
+}
+
+
+
+header.sticky{
+
+    background: #fff; /*kad spustis dole prmjeni se boja zaglavlja u bijelu boju*/
+
+    padding: 30px 88px; /*10px 100px*/
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+
+}
+
+
+
+header .logo{
+
+    font-size: 2rem;  /*velicina slova loga*/
+
+    color: #333;
+
+    font-weight: bolder;
+
+    text-decoration: none;
+
+}
+
+
+
+header.sticky .logo{    /*kad spustis dole prmjeni se boja zaglavlja u bijelu boju*/
+
+    color: #111;
+
+}
+
+
+
+
+
+header .logo span{  /*tocka kod loga*/
+
+    color: var(--pinkk);
+
+}
+
+
+
+header .navbar a{  /*slova u zaglavlju*/
+
+    font-size: 1.5rem;  /*velicina slova*/
+
+    padding: 0 1.5rem;  /*sirina - poredak izmedu slova*/
+
+    color: #666;
+
+}
+
+
+
+header .navbar a:hover{  /*kad predes preko njih promjeni se boja*/
+
+    color: var(--pink);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------o nama-------------------------------------------------------*/
+
+.o_nama{
+
+    background: rgb(230, 227, 227);  /*boja pozadina*/
+
+}
+
+
+
+.row{    /*s jedne strane slika s druge tekst*/
+
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+
+
+.row .col50{ /*tekst se promjenio*/
+
+    position: relative;
+
+    width: 58%;
+
+}
+
+
+
+.titleText{     /*naslov - o nama*/
+
+    width: 100%;  /*sirina*/
+
+    color: rgb(54, 48, 43);
+
+    display: flex; /*skupljeno*/
+
+    font-family: 'Beau Rivage', cursive;   /*vrsta slova*/
+
+    justify-content: center;
+
+    font-size: 3rem;  /*velicina slova*/
+
+    align-items: center;
+
+    flex-direction: none;  /*column*/
+
+}
+
+
+
+.row .col50 .imgBx{
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 360px;
+
+}
+
+
+
+.row .col50 .imgBx img{  /*slika o nama*/
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;  /*cover*/
+
+}
+
+
+
+.row .col50 p{  /*text o nama*/
+
+    color: rgb(13, 14, 14);
+
+    font-size: 1.5em;
+
+    font-weight: 300;
+
+    /*font-family: 'Rubik Wet Paint', cursive;*/
+
+    text-align-last: left;
+
+    margin: 0;
+
+    line-height: 1.7;
+
+}
+
+
+
+/*--------------------------------------------------------------odnsi se na više---------------------------------------------*/
+
+.extra-text{
+
+    display: none;  /*nakon sto upres vise -onaj tekst ispod - na njega se odnosi*/
+
+}
+
+
+
+.extra-text.show{
+
+    display: block;
+
+}
+
+
+
+.read-more-btn{   /*boks-vise*/
+
+    cursor: pointer;
+
+    margin-top: 15px;
+
+    padding: 15px 30px;
+
+    border: none;
+
+    color: #fff;
+
+    background-color: #2eb086;
+
+    text-transform: capitalize;
+
+    border-radius: 10px;
+
+    transition:background-color 0.2s;
+
+}
+
+
+
+.read-more-btn.active{
+
+    background-color: #ff1700;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------proizvodi------------------------------------------------------*/
+
+.proizvodi .content .box .imgBx{
+
+    position: relative;
+
+    width: 100%;
+
+    height: 300px;
+
+}
+
+
+
+.proizvodi .content .box .imgBx img{
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+
+.proizvodi .content .box .text{
+
+    padding: 15px 0 5px;
+
+}
+
+
+
+.proizvodi .content .box .text h3{
+
+    font-weight: 400;
+
+    color: #111;
+
+}
+
+
+
+
+
+
+
+.proizvodi img:hover{
+
+    transform: scaleX(-1);   /*okrenuti sliku*/
+
+}
+
+
+
+.proizvodi div.gallery {
+
+    border: 2px solid #ccc;
+
+}
+
+
+
+.proizvodi div.gallery:hover {
+
+    border: 2px solid #777;
+
+}
+
+
+
+.proizvodi div.gallery img {
+
+    width: 100%;
+
+    height: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------admin---------------------------------------------------------------*/
+
+.admin{  /*naslovna stranica od toga dijela*/
+
+    background-color: #F7B318;
+
+}
+
+
+
+.white .titleText, /*na naslov se odnosi*/
+
+.white p{
+
+    color: #000;
+
+}
+
+
+
+.admin p{
+
+    font-size: 1.3em;
+
+    margin-bottom: 20px;
+
+    font-weight: 500;
+
+    text-align: center;
+
+}
+
+
+
+.content{
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    flex-direction: row;
+
+    margin-top: 50px;
+
+}
+
+
+
+
+
+.content .box{  /*kutija za sliku*/
+
+    width: 340px;
+
+    margin: 20px;
+
+    padding: 40px;
+
+    background: #fff;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+}
+
+
+
+.content .box .imgBx{  /*napravis okvir za sliku -okrugli*/
+
+    position: relative;
+
+    width: 80px;
+
+    height: 80px;
+
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+}
+
+
+
+.content .box .imgBx img{
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+
+.content .box .text{
+
+    text-align: center;
+
+}
+
+
+
+.content .box .text p{
+
+    color: #666;
+
+    font-style: italic;
+
+    font-size: 1.5em;
+
+}
+
+
+
+.content .box .text h3{
+
+    margin-top: 20px;
+
+    color: #111;
+
+    font-size: 1em;
+
+    color: #ff0157;
+
+    font-weight: 600;
+
+}
+
+
+
+.admin img:hover{
+
+    transform: scaleX(-1);   /*okrenuti sliku*/
+
+}
+
+
+
+.text {                                                                                  /* padajući izbornik*/
+
+    position: relative;
+
+    display: inline-block;
+
+}
+
+
+
+.text-content {
+
+    display: none;
+
+    position: absolute;
+
+    background-color: #f9f9f9;
+
+    min-width: 160px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    padding: 12px 16px;
+
+    z-index: 1;
+
+}
+
+
+
+.text:hover .text-content {
+
+    display: block;
+
+}
+
+
+
+/*za ikone-instagram...*/
+
+.ikona{
+
+    position: relative;
+
+    display: flex;
+
+    gap: 50px; /*razmak izmedu aplikacija*/
+
+}
+
+
+
+.ikona .ikona2{
+
+    position: relative;
+
+    list-style: none;
+
+    width: 5px;  /*velicina ikone*/
+
+    height: 80px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: 0.4s;
+
+}
+
+
+
+ikona .ikona2:hover::before{ /*bez ovoga je obicno se ponasa ikona a s ovim kad predes misom se pojavi i oni okviri ostali*/
+
+    inset: 0px;
+
+}
+
+
+
+.ikona .ikona2:hover{
+
+    z-index: 10000;
+
+    transform: scale(0.75);
+
+}
+
+
+
+.ikona .ikona2 a
+
+{
+
+    position: relative;
+
+    text-decoration: none;
+
+    color: var(--clr); /*facebook plave boje, ins-roze sve tamo u body napises*/
+
+    z-index: 10;
+
+    font-size: 1.5em; /*povecali malo ikone*/
+
+    transition: 0.5s;
+
+}
+
+
+
+.ikona .ikona2:hover a{
+
+    font-size: 3em; /*kad stanes s misom ono se poveca*/
+
+    filter: drop-shadow(0 0 20px var(--clr))
+
+    drop-shadow(0 0 40px var(--clr))
+
+    drop-shadow(0 0 60px var(--clr)); /*doda se svijestlost kad predes misom*/
+
+}
+
+
+
+
+
+/*---------------------------------------------------------------------------------kontakt-------------------------------------------------*/
+
+.kontakt{
+
+    background: url(img/Pozadine/sport4.jpg);
+
+    background-size: cover;
+
+}
+
+
+
+.contactForm{
+
+    padding: 75px 50px;
+
+    background: #fff;
+
+    box-shadow: 0 15px 50px rgba(27, 26, 26, 0.1);
+
+    max-width: 500px;
+
+    margin-top: 50px;
+
+}
+
+
+
+.contactForm p{
+
+    color: #111;
+
+    font-size: 1.3em;
+
+    margin-bottom: 20px;
+
+    font-weight: 500;
+
+    text-align: center;
+
+}
+
+
+
+.contactForm .inputBox{
+
+    position: relative;
+
+    width: 100%;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.contactForm .inputBox input,
+
+.contactForm .inputBox textarea{
+
+    width: 100%;
+
+    border: 1px solid #555;
+
+    padding: 10px;
+
+    color: #111;
+
+    outline: none;
+
+    font-size: 16px;
+
+    font-weight: 300;
+
+    resize: none;
+
+}
+
+
+
+.contactForm .inputBox input[type="submit"]{  /*odnosi se za u kontaktu-poslati*/
+
+    font-size: 1em;
+
+    color: #fff;
+
+    background: #ff0157;
+
+    display: inline-block;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    letter-spacing: 2px;
+
+    transition: 0.5s;
+
+    max-width: 100px;
+
+    font-weight: 500;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------podnozje-------------------------*/
+
+.copyrightText{
+
+    padding: 8px 40px;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+
+}
+
+
+
+.copyrightText p{
+
+    color: #333;
+
+}
+
+
+
+.copyrightText a{
+
+    color: #ff0157;
+
+    font-weight: 500;
+
+    text-decoration: none;
+
+}
+
+
+
+
+
+/*------------------------------------------------------------------Predi misom preko -slike proizviddi-------------------------------*/
+
+.dropdown {                                                                                     /*dropdown=> padajući izbornik*/
+
+    position: relative;
+
+    display: inline-block;
+
+}
+
+
+
+.dropdown-content {
+
+    display: none;
+
+    position: absolute;
+
+    background-color: #f9f9f9;
+
+    min-width: 160px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    padding: 12px 16px;
+
+    z-index: 1;
+
+}
+
+
+
+.dropdown:hover .dropdown-content {
+
+    display: block;
+
+}
+
+
+
+
+
+
+
+/*-----------------------footer-zadnji dio-----------*/
+
+.footer{
+
+    background-color: #24262b;
+
+    padding: 70px 0;
+
+}
+
+
+
+.footer .container{
+
+    max-width: 1170px;
+
+    margin: auto;
+
+}
+
+
+
+.footer .row{
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+.footer ul{
+
+    list-style: none;
+
+}
+
+
+
+.footer-col{
+
+    width: 25%;
+
+    padding: 0 15px;
+
+}
+
+
+
+.footer-col h4{  /*naslov cjelokupan sve*/
+
+    font-size: 18px;
+
+    color: #ffffff;
+
+    text-transform: capitalize;
+
+    margin-bottom: 30px;   /*velicina okvira - naslov udaljen dole od teksta*/
+
+    font-weight: 500;
+
+    position: relative;
+
+}
+
+
+
+
+
+.footer-col h4::before{  /*podvuceno naslov*/
+
+    content: '';
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -10px;
+
+    background-color: var(--pinkk);
+
+    height: 2px;
+
+    box-sizing: border-box;
+
+    width: 50px;
+
+}
+
+
+
+.footer-col ul li:not(:last-child){  /*?*/
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.footer-col ul li a{
+
+    font-size: 16px;
+
+    text-transform: capitalize;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-weight: 300;
+
+    color: #bbb;
+
+    display: block;
+
+    transition: all 0.3s ease;
+
+}
+
+
+
+
+
+.footer-col ul li a:hover{
+
+    color: #ffffff;
+
+    padding-left: 8px;  /*kad predes misom ono se pomakne*/
+
+}
+
+
+
+.footer-col .social-links a{
+
+    display: inline-block;
+
+    height: 40px;  /*visina i sirina*/
+
+    width: 40px;
+
+    background-color: rgba(255,255,255,0.2);
+
+    margin: 0 10px 10px 0;
+
+    text-align: center;
+
+    line-height: 40px;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    transition: all 0.5s ease;
+
+}
+
+
+
+.footer-col .social-links a:hover{  /*hover-dadne neku zivost -- promjeni se u drugu boju kad predes misom*/
+
+    color: #24262b;
+
+    background-color: #ffffff;
+
+}
+
+
+
+
+
+/*resposive*/
+
+@media(max-width: 767px){ /*tamo iz provjeri uzmes - jer kad smanjis da bude dobro*/
+
+    .footer-col {
+
+        width: 50%;
+
+        margin-bottom: 30px;
+
+    }
+
+}
+
+
+
+@media(max-width: 574px){ /*tamo iz provjeri uzmes - jer kad smanjis da bude dobro i kad jos vise samnjis*/
+
+    .footer-col {
+
+        width: 100%;
+
+    }
+
+} /*font-family*/
+
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Hurricane&family=Inspiration&family=Source+Sans+Pro:wght@200;300;400&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Hurricane&family=Inspiration&family=Rubik+Moonrocks&family=Source+Sans+Pro:wght@200;300;400&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Hurricane&family=Inspiration&family=Rubik+Moonrocks&family=Rubik+Wet+Paint&family=Source+Sans+Pro:wght@200;300;400&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Hurricane&family=Indie+Flower&family=Inspiration&family=Rubik+Moonrocks&family=Rubik+Wet+Paint&family=Source+Sans+Pro:wght@200;300;400&display=swap');
+
+
+
+
+
+:root{
+
+    --pink: #e84393;
+
+    --pinkk : #ff0157;
+
+    --bg: #222;
+
+}
+
+
+
+*{
+
+    margin: 0;  /*margin: 10px;*/
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    /*font-family: 'Courier New', Courier, monospace;*/
+
+    outline: none; /*?*/
+
+    border: none;
+
+    text-decoration: none;  /*obican tekst-ono nije podvucen*/
+
+    text-transform:inherit;
+
+    /*text-transform: uppercase - velika sloca, linespace -mala sva slova, nherit -normalono, capitalize prvo veliku uvijek*/
+
+    /*transition: .2s linear; /*?*/
+
+
+
+}
+
+
+
+/*--------------------------------------Ovaj dio dole je za mobitel i komp i laptop => svade da isto izgleda------------------*/
+
+.responsive {
+
+    padding: 0 6px;
+
+    float: left;
+
+    width: 24.99999%;
+
+}
+
+
+
+@media only screen and (max-width: 700px) {
+
+    .responsive {
+
+        width: 49.99999%;
+
+        margin: 6px 0;
+
+    }
+
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .responsive {
+
+        width: 100%;
+
+    }
+
+}
+
+
+
+.clearfix:after {
+
+    content: "";
+
+    display: table;
+
+    clear: both;
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+html{ /*?*/
+
+    font-size: 62.5%;
+
+    scroll-behavior: smooth;
+
+    scroll-padding-top: 6rem;
+
+    overflow-x: hidden;
+
+}
+
+
+
+section{  /*kao stranice*/
+
+    padding: 100px;
+
+}
+
+
+
+/*----------------------------------------------------------------------naslovnica-------------------------------------------------*/
+
+.naslovnica{
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    /*background: url(img/Pozadine/1807765.jpg);*/
+
+}
+
+
+
+.naslovnica h1{
+
+    font-size: 1.5rem;
+
+    color: wheat;
+
+    text-align: center;
+
+    /* text-decoration: underline;  /*crta ispod teksta*/
+
+    text-transform: uppercase; /*velika slova*/
+
+    text-shadow: 1px 1px 2px black, 0 0 10px rgb(177, 207, 127), 0 0 5px darkblue;
+
+    /*sjena teksta-vise puta*/
+
+    font-family: 'Rubik Wet Paint', cursive;
+
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------zaglavlje----------------------------------------------------------*/
+
+header{
+
+    position: fixed;
+
+    top: 0;  /*uzgar udaljeno*/
+
+    left: 0;   /*ulijevo odmaknuto*/
+
+    right: 0;    /*udesno odmaknuto*/
+
+    width: 100%;
+
+    padding: 2rem 9%;  /*debljina zaglavlja*/
+
+    display: flex;
+
+    justify-content: space-between;   /*rasporedi shop - admin.. kako treba, da nema toga bilo bi sve jedno do dodrugoga*/
+
+    align-items: center;
+
+    transition: 0.5s;
+
+    background: #fff;
+
+    font-size: 1.25em;    /*velicina slova*/
+
+    z-index: 1000; /*999*/
+
+    box-shadow: 0 .5rem 1.5rem;  /*rgba(0,0,0,.1);    /*doda se okvir za zaglavlje*/
+
+}
+
+
+
+header.sticky{
+
+    background: #fff; /*kad spustis dole prmjeni se boja zaglavlja u bijelu boju*/
+
+    padding: 30px 88px; /*10px 100px*/
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+
+}
+
+
+
+header .logo{
+
+    font-size: 2rem;  /*velicina slova loga*/
+
+    color: #333;
+
+    font-weight: bolder;
+
+    text-decoration: none;
+
+}
+
+
+
+header.sticky .logo{    /*kad spustis dole prmjeni se boja zaglavlja u bijelu boju*/
+
+    color: #111;
+
+}
+
+
+
+
+
+header .logo span{  /*tocka kod loga*/
+
+    color: var(--pinkk);
+
+}
+
+
+
+header .navbar a{  /*slova u zaglavlju*/
+
+    font-size: 1.5rem;  /*velicina slova*/
+
+    padding: 0 1.5rem;  /*sirina - poredak izmedu slova*/
+
+    color: #666;
+
+}
+
+
+
+header .navbar a:hover{  /*kad predes preko njih promjeni se boja*/
+
+    color: var(--pink);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------------------o nama-------------------------------------------------------*/
+
+.o_nama{
+
+    background: rgb(230, 227, 227);  /*boja pozadina*/
+
+}
+
+
+
+.row{    /*s jedne strane slika s druge tekst*/
+
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+}
+
+
+
+.row .col50{ /*tekst se promjenio*/
+
+    position: relative;
+
+    width: 58%;
+
+}
+
+
+
+.titleText{     /*naslov - o nama*/
+
+    width: 100%;  /*sirina*/
+
+    color: rgb(54, 48, 43);
+
+    display: flex; /*skupljeno*/
+
+    font-family: 'Beau Rivage', cursive;   /*vrsta slova*/
+
+    justify-content: center;
+
+    font-size: 3rem;  /*velicina slova*/
+
+    align-items: center;
+
+    flex-direction: none;  /*column*/
+
+}
+
+
+
+.row .col50 .imgBx{
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 360px;
+
+}
+
+
+
+.row .col50 .imgBx img{  /*slika o nama*/
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;  /*cover*/
+
+}
+
+
+
+.row .col50 p{  /*text o nama*/
+
+    color: rgb(13, 14, 14);
+
+    font-size: 1.5em;
+
+    font-weight: 300;
+
+    /*font-family: 'Rubik Wet Paint', cursive;*/
+
+    text-align-last: left;
+
+    margin: 0;
+
+    line-height: 1.7;
+
+}
+
+
+
+/*--------------------------------------------------------------odnsi se na više---------------------------------------------*/
+
+.extra-text{
+
+    display: none;  /*nakon sto upres vise -onaj tekst ispod - na njega se odnosi*/
+
+}
+
+
+
+.extra-text.show{
+
+    display: block;
+
+}
+
+
+
+.read-more-btn{   /*boks-vise*/
+
+    cursor: pointer;
+
+    margin-top: 15px;
+
+    padding: 15px 30px;
+
+    border: none;
+
+    color: #fff;
+
+    background-color: #2eb086;
+
+    text-transform: capitalize;
+
+    border-radius: 10px;
+
+    transition:background-color 0.2s;
+
+}
+
+
+
+.read-more-btn.active{
+
+    background-color: #ff1700;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------proizvodi------------------------------------------------------*/
+
+.proizvodi .content .box .imgBx{
+
+    position: relative;
+
+    width: 100%;
+
+    height: 300px;
+
+}
+
+
+
+.proizvodi .content .box .imgBx img{
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+
+.proizvodi .content .box .text{
+
+    padding: 15px 0 5px;
+
+}
+
+
+
+.proizvodi .content .box .text h3{
+
+    font-weight: 400;
+
+    color: #111;
+
+}
+
+
+
+
+
+
+
+.proizvodi img:hover{
+
+    transform: scaleX(-1);   /*okrenuti sliku*/
+
+}
+
+
+
+.proizvodi div.gallery {
+
+    border: 2px solid #ccc;
+
+}
+
+
+
+.proizvodi div.gallery:hover {
+
+    border: 2px solid #777;
+
+}
+
+
+
+.proizvodi div.gallery img {
+
+    width: 100%;
+
+    height: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------admin---------------------------------------------------------------*/
+
+.admin{  /*naslovna stranica od toga dijela*/
+
+    background-color: #F7B318;
+
+}
+
+
+
+.white .titleText, /*na naslov se odnosi*/
+
+.white p{
+
+    color: #000;
+
+}
+
+
+
+.admin p{
+
+    font-size: 1.3em;
+
+    margin-bottom: 20px;
+
+    font-weight: 500;
+
+    text-align: center;
+
+}
+
+
+
+.content{
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    flex-direction: row;
+
+    margin-top: 50px;
+
+}
+
+
+
+
+
+.content .box{  /*kutija za sliku*/
+
+    width: 340px;
+
+    margin: 20px;
+
+    padding: 40px;
+
+    background: #fff;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+}
+
+
+
+.content .box .imgBx{  /*napravis okvir za sliku -okrugli*/
+
+    position: relative;
+
+    width: 80px;
+
+    height: 80px;
+
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+}
+
+
+
+.content .box .imgBx img{
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+
+.content .box .text{
+
+    text-align: center;
+
+}
+
+
+
+.content .box .text p{
+
+    color: #666;
+
+    font-style: italic;
+
+    font-size: 1.5em;
+
+}
+
+
+
+.content .box .text h3{
+
+    margin-top: 20px;
+
+    color: #111;
+
+    font-size: 1em;
+
+    color: #ff0157;
+
+    font-weight: 600;
+
+}
+
+
+
+.admin img:hover{
+
+    transform: scaleX(-1);   /*okrenuti sliku*/
+
+}
+
+
+
+.text {                                                                                  /* padajući izbornik*/
+
+    position: relative;
+
+    display: inline-block;
+
+}
+
+
+
+.text-content {
+
+    display: none;
+
+    position: absolute;
+
+    background-color: #f9f9f9;
+
+    min-width: 160px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    padding: 12px 16px;
+
+    z-index: 1;
+
+}
+
+
+
+.text:hover .text-content {
+
+    display: block;
+
+}
+
+
+
+/*za ikone-instagram...*/
+
+.ikona{
+
+    position: relative;
+
+    display: flex;
+
+    gap: 50px; /*razmak izmedu aplikacija*/
+
+}
+
+
+
+.ikona .ikona2{
+
+    position: relative;
+
+    list-style: none;
+
+    width: 5px;  /*velicina ikone*/
+
+    height: 80px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: 0.4s;
+
+}
+
+
+
+ikona .ikona2:hover::before{ /*bez ovoga je obicno se ponasa ikona a s ovim kad predes misom se pojavi i oni okviri ostali*/
+
+    inset: 0px;
+
+}
+
+
+
+.ikona .ikona2:hover{
+
+    z-index: 10000;
+
+    transform: scale(0.75);
+
+}
+
+
+
+.ikona .ikona2 a
+
+{
+
+    position: relative;
+
+    text-decoration: none;
+
+    color: var(--clr); /*facebook plave boje, ins-roze sve tamo u body napises*/
+
+    z-index: 10;
+
+    font-size: 1.5em; /*povecali malo ikone*/
+
+    transition: 0.5s;
+
+}
+
+
+
+.ikona .ikona2:hover a{
+
+    font-size: 3em; /*kad stanes s misom ono se poveca*/
+
+    filter: drop-shadow(0 0 20px var(--clr))
+
+    drop-shadow(0 0 40px var(--clr))
+
+    drop-shadow(0 0 60px var(--clr)); /*doda se svijestlost kad predes misom*/
+
+}
+
+
+
+
+
+/*---------------------------------------------------------------------------------kontakt-------------------------------------------------*/
+
+.kontakt{
+
+    background: url(img/Pozadine/sport4.jpg);
+
+    background-size: cover;
+
+}
+
+
+
+.contactForm{
+
+    padding: 75px 50px;
+
+    background: #fff;
+
+    box-shadow: 0 15px 50px rgba(27, 26, 26, 0.1);
+
+    max-width: 500px;
+
+    margin-top: 50px;
+
+}
+
+
+
+.contactForm p{
+
+    color: #111;
+
+    font-size: 1.3em;
+
+    margin-bottom: 20px;
+
+    font-weight: 500;
+
+    text-align: center;
+
+}
+
+
+
+.contactForm .inputBox{
+
+    position: relative;
+
+    width: 100%;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.contactForm .inputBox input,
+
+.contactForm .inputBox textarea{
+
+    width: 100%;
+
+    border: 1px solid #555;
+
+    padding: 10px;
+
+    color: #111;
+
+    outline: none;
+
+    font-size: 16px;
+
+    font-weight: 300;
+
+    resize: none;
+
+}
+
+
+
+.contactForm .inputBox input[type="submit"]{  /*odnosi se za u kontaktu-poslati*/
+
+    font-size: 1em;
+
+    color: #fff;
+
+    background: #ff0157;
+
+    display: inline-block;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    letter-spacing: 2px;
+
+    transition: 0.5s;
+
+    max-width: 100px;
+
+    font-weight: 500;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+
+/*----------------------------podnozje-------------------------*/
+
+.copyrightText{
+
+    padding: 8px 40px;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+
+}
+
+
+
+.copyrightText p{
+
+    color: #333;
+
+}
+
+
+
+.copyrightText a{
+
+    color: #ff0157;
+
+    font-weight: 500;
+
+    text-decoration: none;
+
+}
+
+
+
+
+
+/*------------------------------------------------------------------Predi misom preko -slike proizviddi-------------------------------*/
+
+.dropdown {                                                                                     /*dropdown=> padajući izbornik*/
+
+    position: relative;
+
+    display: inline-block;
+
+}
+
+
+
+.dropdown-content {
+
+    display: none;
+
+    position: absolute;
+
+    background-color: #f9f9f9;
+
+    min-width: 160px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    padding: 12px 16px;
+
+    z-index: 1;
+
+}
+
+
+
+.dropdown:hover .dropdown-content {
+
+    display: block;
+
+}
+
+
+
+
+
+
+
+/*-----------------------footer-zadnji dio-----------*/
+
+.footer{
+
+    background-color: #24262b;
+
+    padding: 70px 0;
+
+}
+
+
+
+.footer .container{
+
+    max-width: 1170px;
+
+    margin: auto;
+
+}
+
+
+
+.footer .row{
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+.footer ul{
+
+    list-style: none;
+
+}
+
+
+
+.footer-col{
+
+    width: 25%;
+
+    padding: 0 15px;
+
+}
+
+
+
+.footer-col h4{  /*naslov cjelokupan sve*/
+
+    font-size: 18px;
+
+    color: #ffffff;
+
+    text-transform: capitalize;
+
+    margin-bottom: 30px;   /*velicina okvira - naslov udaljen dole od teksta*/
+
+    font-weight: 500;
+
+    position: relative;
+
+}
+
+
+
+
+
+.footer-col h4::before{  /*podvuceno naslov*/
+
+    content: '';
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -10px;
+
+    background-color: var(--pinkk);
+
+    height: 2px;
+
+    box-sizing: border-box;
+
+    width: 50px;
+
+}
+
+
+
+.footer-col ul li:not(:last-child){  /*?*/
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.footer-col ul li a{
+
+    font-size: 16px;
+
+    text-transform: capitalize;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-weight: 300;
+
+    color: #bbb;
+
+    display: block;
+
+    transition: all 0.3s ease;
+
+}
+
+
+
+
+
+.footer-col ul li a:hover{
+
+    color: #ffffff;
+
+    padding-left: 8px;  /*kad predes misom ono se pomakne*/
+
+}
+
+
+
+.footer-col .social-links a{
+
+    display: inline-block;
+
+    height: 40px;  /*visina i sirina*/
+
+    width: 40px;
+
+    background-color: rgba(255,255,255,0.2);
+
+    margin: 0 10px 10px 0;
+
+    text-align: center;
+
+    line-height: 40px;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    transition: all 0.5s ease;
+
+}
+
+
+
+.footer-col .social-links a:hover{  /*hover-dadne neku zivost -- promjeni se u drugu boju kad predes misom*/
+
+    color: #24262b;
+
+    background-color: #ffffff;
+
+}
+
+
+
+
+
+/*resposive*/
+
+@media(max-width: 767px){ /*tamo iz provjeri uzmes - jer kad smanjis da bude dobro*/
+
+    .footer-col {
+
+        width: 50%;
+
+        margin-bottom: 30px;
+
+    }
+
+}
+
+
+
+@media(max-width: 574px){ /*tamo iz provjeri uzmes - jer kad smanjis da bude dobro i kad jos vise samnjis*/
+
+    .footer-col {
+
+        width: 100%;
+
+    }
+
+}
