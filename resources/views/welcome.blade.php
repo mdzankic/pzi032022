@@ -89,7 +89,7 @@
         <div class="box">
             <div class="imgBx">
                     <img src="/img/proizvodi/b.png" alt="Muška trenerka" width="600" height="400"></a>
-            </div>
+                </div>
 
             <div class="desc">
                 <div class="text">
